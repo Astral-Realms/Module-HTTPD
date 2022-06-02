@@ -23,12 +23,9 @@ public class IndexEndpoint extends AbstractServlet
     private String indexHTML()
     {
         String file = readFile(this.getClass().getResourceAsStream("/httpd/index.html"));
-        String isAre = Bukkit.getOnlinePlayers().size() == 1 ? " is " : " are ";
-        String pluralOnline = Bukkit.getOnlinePlayers().size() == 1 ? " player " : " players ";
-        String pluralMax = Bukkit.getMaxPlayers() == 1 ? " player " : " players ";
-        file = file.replace("${is_are}", isAre);
-        file = file.replace("${server_online_players}", Bukkit.getOnlinePlayers().size() + pluralOnline);
-        file = file.replace("${server_total_players}", Bukkit.getMaxPlayers() + pluralMax);
+        file = file.replace("${MESSAGE}", "<p class=\"center\">Welcome to the HTTPD for the Astral Realms Free OP server!</p>" +
+                "<br>" +
+                "<p class=\"center\">We know it looks quite bland right now, but more updates to it will come soon, stay tuned!</p>");
         return file;
     }
 }
