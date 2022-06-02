@@ -1,2 +1,2 @@
 # Module-HTTPD [![Build Status](https://ci.plex.us.org/job/Module-HTTPD/badge/icon)](https://ci.plex.us.org/job/Module-HTTPD/)
-The HTTPD module for Plex
+The HTTPD module for Plex (edited for Astral Realms Free OP)
